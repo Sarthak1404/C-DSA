@@ -7,7 +7,7 @@ void insert(int item)
 {
 if((front == 0 && rear == MAX-1) || (front == rear+1))
 {
-printf("Queue Overflow n");
+printf("Queue Overflow \n");
 return;
 }
 if(front == -1)
@@ -28,10 +28,10 @@ void deletion()
 {
 if(front == -1)
 {
-printf("Queue Underflown");
+printf("Queue Underflow \n");
 return ;
 }
-printf("Element deleted from queue is : %dn",cqueue_arr[front]);
+printf("Element deleted from queue is : %d \n",cqueue_arr[front]);
 if(front == rear)
 {
 front = -1;
@@ -50,10 +50,10 @@ void display()
 int front_pos = front,rear_pos = rear;
 if(front == -1)
 {
-printf("Queue is emptyn");
+printf("Queue is empty \n");
 return;
 }
-printf("Queue elements :n");
+printf("Queue elements :\n");
 if( front_pos <= rear_pos )
 while(front_pos <= rear_pos)
 {
@@ -74,17 +74,17 @@ printf("%d ",cqueue_arr[front_pos]);
 front_pos++;
 }
 }
-printf("n");
+printf("\n");
 }
 void main()
 {
 int choice,item;
 do
 {
-printf("1.Insertn");
-printf("2.Deleten");
-printf("3.Displayn");
-printf("4.Quitn");
+printf("1.Insert \n");
+printf("2.Delete \n");
+printf("3.Display \n");
+printf("4.Quit \n");
 printf("Enter your choice : ");
 scanf("%d",&choice);
 switch(choice)
@@ -103,7 +103,7 @@ break;
 case 4:
 break;
 default:
-printf("Wrong choicen");
+printf("Wrong choice \n");
 }
 }while(choice!=4);
 
